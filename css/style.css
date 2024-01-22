@@ -1,0 +1,1312 @@
+
+/* 4 buttons start */
+
+.button-block {
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Set a maximum width */
+  margin-top:-10px ;
+  /* margin: 200px auto; */
+}
+
+.social {
+  display: inline-block;
+  margin: 15px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+.social a {
+  display: block;
+  background: rgba(0, 0, 0, 1);
+  padding: 10px; /* Adjust padding as needed */
+  margin-left: 20px;
+  position: relative;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  box-shadow: -10px 10px 5px #076990cb;
+  transition: all 0.5s ease-in-out;
+}
+
+.social a::before,
+.social a::after {
+   height: 15px; /*Adjust height as needed */
+}
+
+.social a::before {
+  left: -15px; /* Adjust left position as needed */
+}
+
+.social a::after {
+  bottom: -15px; /* Adjust bottom position as needed */
+  left: -7.5px; /* Adjust left position as needed */
+}
+
+.social a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(15px, -15px);
+  box-shadow: -25px 25px 15px rgba(0, 0, 0, 0.5);
+}
+
+.social i {
+  color: rgba(256, 256, 256, 1);
+  font-size: 20pt; /* Adjust font size as needed */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .button-block {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .social {
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .social a {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .social i {
+    font-size: 16pt; /* Adjust font size for smaller screens */
+  }
+}
+
+/* 4 buttons end */
+
+
+
+
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+
+}
+#font-family{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+ 
+}
+.h1{
+    color: #092635 !important;
+}
+
+/*** Spinner Start ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn-primary-outline-0 {
+    color: var(--bs-white) !important;
+    border: 1px solid var(--bs-primary);
+}
+
+.btn-light-outline-0 {
+    color: var(--bs-primary) !important;
+    border: 1px solid var(--bs-light);
+}
+
+.btn-primary-outline-0:hover {
+    background: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
+    border: 1px solid var(--bs-primary);
+}
+
+.btn-light-outline-0:hover {
+    background: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+    border: 1px solid var(--bs-secondary);
+}
+
+.img-border {
+    border-color: var(--bs-secondary);
+    border-style: double;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+}
+
+
+/*** Navbar Start ***/
+
+.sticky-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+}
+
+.navbar a{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+@media (min-width: 1200px) {
+    .navbar .navbar-collapse .border-top {
+        border-top: none !important;
+    }
+}
+/*** Navbar End ***/
+
+/*** Carousel Start ***/
+.carousel-item {
+    position: relative;
+    min-height: 100vh
+    
+}
+
+.carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .carousel-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4));
+    background-size: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+}
+
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+    background: transparent;
+}
+
+#carouselId .carousel-indicators {
+    padding-bottom: 30px;
+}
+
+#carouselId .carousel-indicators li {
+    border-top: 10px solid var(--bs-white);
+    border-bottom: 10px solid var(--bs-white);
+    border-right: 5px solid var(--bs-white);
+    border-left: 5px solid var(--bs-white);
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+#carouselId .carousel-indicators li.active {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+    border-right: 15px solid var(--bs-primary);
+    border-left: 15px solid var(--bs-primary);
+}
+/*** Carousel End ***/
+
+/* About me  */
+
+
+.bg-primary{
+  background-color: rgb(226, 240, 252);
+  border-radius: 10px;
+  
+}
+#ul li{
+  color: black !important;
+}
+#border{
+  border: 1px solid #61A3BA;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*** Wedding Story Start ***/
+.story .story-timeline,
+.story .story-timeline .row {
+    position: relative;
+}
+
+.story .story-timeline::before,
+.story .story-timeline::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--bs-secondary);
+    border-radius: 10px;
+    left: 50%;
+    top: -7px;
+    transform: translateX(-50%);
+}
+
+.story .story-timeline::after {
+    top: auto;
+    bottom: -7px;
+}
+
+.story .story-timeline .row::after {
+    position: absolute;
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--bs-secondary);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .story .story-timeline::before,
+    .story .story-timeline::after,
+    .story .story-timeline .row::after  {
+        display: none;
+    }
+}
+/*** Wedding Story End ***/
+
+/*** Wedding Date Start ***/
+#wedding-date {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(18, 14, 14, 0.731), rgba(8, 6, 6, 0.822)), url(../img/skillsbackground.jpg) ;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skills-date-bg .wedding-date::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.skills-date-bg .wedding-date .wedding-date-content {
+    position: relative;
+    z-index: 9;
+}
+/*** Wedding Date End ***/
+
+
+/*** Wedding Timeline Start ***/
+@media (max-width: 576px) {
+    .wedding-timeline .wedding-content .heart-circle {
+        display: none;
+    }
+}
+/*** Wedding Timeline End ***/
+
+
+/*** Gallery Start ***/
+.gallery .gallery-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .gallery-img .hover-style {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+.gallery .gallery-img:hover .hover-style {
+    width: auto;
+    height: auto;
+    border: 600px solid rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+.gallery .gallery-img img {
+    transition: 0.5s;
+}
+
+.gallery .gallery-img:hover img {
+    transform: scale(1.3);
+}
+
+.gallery .gallery-item .gallery-overlay {
+    transition: 0.5s;
+}
+
+.gallery .gallery-item:hover .gallery-overlay {
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.gallery .gallery-img .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 2;
+    
+}
+
+.gallery .gallery-img:hover .search-icon {
+    opacity: 1;
+}
+/*** Gallery End ***/
+
+
+/*** team Start ***/
+.team .team-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .team-item .team-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 4;
+}
+
+.team .team-item:hover .team-content {
+    background: rgba(0, 0, 0, .5);
+}
+
+.team .team-item .team-content {
+    text-align: center;
+}
+
+.team .team-item .team-social {
+    position: absolute;
+    top: -180px;
+    right: 15px;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-social {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+}
+
+.team .team-item .team-img {
+    position: relative;
+    overflow: hidden;
+    border-color: var(--bs-secondary);
+    border-style: double;
+}
+
+.team .team-item .team-img .team-img-main {
+    position: relative;
+    z-index: 3;
+}
+
+.team .team-item .team-img .team-img-main img,
+.team .team-item .team-img .team-img-bg img {
+    transition: 0.5s;
+}
+
+.team .team-item:hover .team-img .team-img-main img,
+.team .team-item:hover .team-img .team-img-bg img {
+    transform: scale(1.1);
+}
+/*** Team End ***/
+
+
+/*** Contact Us Start ***/
+.RSVP-form {
+    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
+    object-fit: cover;
+}
+/*** Contact Us End ***/
+
+
+/*** Footer Start ***/
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/contactimg.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer .footer-item a.btn-link,
+.footer .footer-item p {
+    line-height: 35px;
+    font-size: 17px;
+    color: var(--bs-light);
+    transition: 0.5s;
+}
+
+.footer .footer-item a.btn-link:hover {
+    color: var(--bs-primary);
+    letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+    .footer .text-start,
+    .footer .text-center,
+    .footer .text-end {
+        text-align: center !important;
+    }
+}
+/*** Footer End ***/
+
+
+/*** copyright Start ***/
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #092635 !important;
+    text-align: center !important;
+}
+/*** copyright end ***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* skills Page */
+
+/*** Skills ***/
+
+#skill .progress {
+    height: 5px;
+    border-radius: 5px;
+}
+
+#skill .progress .progress-bar {
+    width: 0px;
+    border-radius: 5px;
+    transition: 3s;
+}
+
+#skill .nav-pills .nav-link {
+    color: var(--dark);
+}
+
+#skill .nav-pills .nav-link.active {
+    color: #FFFFFF;
+}
+
+#skill .tab-content hr {
+    width: 30px;
+}
+
+
+  
+
+   :root {
+    --start-color: #090406; /* Default start color */
+    --end-color: #010101; /* Default end color */
+  }
+   .skill1 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer1 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+    -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #number {
+    font-weight: 600;
+    color:white;
+  }
+  /* linearGradient{
+    background-image: linear-gradient(to left, red,black,blue);
+  } */
+  .circle1 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 2 */
+  .skill2 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer2 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+    -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner2 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numbertwo {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 3 */
+  .skill3 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer3 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+      -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner3 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numberthree {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .circle3 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 530;
+    stroke-dashoffset: 530;
+    animation: anim 2s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 4 */
+  .skill4 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer4 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+    -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner4 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numberfive {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .circle4 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 562;
+    stroke-dashoffset: 562;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 5 */
+  .skill5 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer5 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+      -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner5 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numberfour {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .circle5 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 462;
+    stroke-dashoffset: 462;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 6 */
+  .skill6 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer6 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+      -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner6 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numbersix {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .circle6 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 390;
+    stroke-dashoffset: 390;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 7 */
+  .skill7 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer7 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+    -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner7 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numberseven {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .circle7 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 462;
+    stroke-dashoffset: 462;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+
+  /* Skill Circle 7 */
+  .skill8 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+  
+  .outer8 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 1.5),
+      -6px -6px 10px -1px rgba(199, 197, 197, 0.7);
+  }
+  
+  .inner8 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #numbereight {
+    font-weight: 600;
+    color:white;
+  }
+  
+  .circle8 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 462;
+    stroke-dashoffset: 462;
+    animation: anim 3s linear forwards;
+  }
+  
+  .html-circle-skill {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 165;
+    }
+  }
+  
+  .contactbg{
+    background-color: #092635;
+  }
+
+
+  /* About me Start==================================== */
+  .acontainer {
+    margin-top: 70px; /* Adjust margin-top as needed */
+    background-color: #CD8D7A;
+    padding: 20px; /* Add padding for better visual */
+    margin-bottom: 100px;
+    clip-path: polygon(100% 0, 100% 21%, 100% 100%, 21% 100%, 17% 85%, 13% 100%, 0 100%, 0 0);
+    position: relative;
+    z-index: 000;
+}
+
+.demoooo{
+    width: 280px;
+    position: absolute;
+    z-index: 111;
+    left: 135px;
+    margin-top: -20px;
+    
+}
+.demoooo2{
+
+  width: 400px;
+  position: absolute;
+  z-index: 222;
+  right:125px;
+  margin-top: -30px;
+ 
+}
+
+@media (max-width: 360px) { /* Adjust breakpoint as needed */
+  .demoooo{
+    width: 280px;
+    position: absolute;
+    z-index: 111;
+    left: 40px;
+    margin-top: -50px;
+}
+.demoooo2{
+  width: 400px;
+  position: absolute;
+  z-index: 222;
+  right:0px;
+  margin-top: 630px;
+ 
+}
+.abox1{
+  margin-top: 180px;
+}
+.acontainer{
+  height: 1400px;
+}
+}
+.acontainer p {
+  color: #010101;
+}
+.inner-containers {
+    height: auto; /* Adjust height as needed */
+   
+}
+
+.abox1,
+.abox2,
+.abox3 {
+  
+    margin-bottom: 20px; /* Add margin-bottom for spacing between boxes */
+}
+.inner-abox1{
+  border-left: 2px solid white;
+  margin-top:30px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+/* .img1{
+    margin-top:-80px ;
+    position: relative;
+    top: 0px;
+} */
+.abox1{
+  background-color: wheat;
+}
+.abox2{
+    padding-top:80px ;
+    position: relative;
+  
+}
+
+.img2{
+    margin-top: 250px;
+    height: 300px;
+    width: 450px;
+}
+
+@media (max-width: 767px) { /* Adjust breakpoint as needed */
+    .abox2,
+    .abox2,
+    .abox3 {
+        margin-top: 20px; /* Adjust margin-top for spacing between boxes on smaller screens */
+    }
+}
+
+/* About me End==================================== */
+
+/* My SKills Start====================================== */
+#Skills{
+  margin-top: -100px;
+}
+#Project {
+  background-color: #CD8D7A !important;
+}
+#Project i {
+  color: wheat !important;
+}
+
+
+/* My SKills End====================================== */
+
+.Skills-rows{
+  position: relative;
+}
+.circle-one , .circle-two, .circle-three, .circle-four{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 5px solid white;
+  padding: 5px;
+}
+.col-lg-3 .Skills-circle1{
+  border-radius: 50%;
+  background-color:  #CD8D7A;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.col-lg-3 .Skills-circle2{
+  border-radius: 50%;
+  background-color:  #CD8D7A;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.col-lg-3  .Skills-circle{
+  border-radius: 50%;
+  background-color:  wheat;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+.Skills-circle-position{  border-radius: 50%;
+  background-color:  wheat;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+.col-lg-33{
+  border-radius: 50%;
+  background-color:  wheat;
+  padding: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.circle-position1{
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  z-index: 111;
+}
+.circle-position2{
+  position: absolute;
+  top: 0px;
+  right:230px;
+  z-index: 111;
+}
+/* .Skills-circle1{
+  margin-left:-50px ;
+}
+.Skills-circle2{
+  margin-right: 0px;
+} */
+.Skills-image{
+  width: 590px;
+  height: 500px;
+  position: absolute;
+  left: 350px;
+  top: 250px;
+  z-index: 111;
+}
+.Skill-main-container{
+ position: relative;
+ padding-bottom: 100px;
+ 
+}
+.Skill-inner-container{
+  position: relative;
+  z-index: 000;
+}
+
+@media (max-width: 767px) { /* Adjust breakpoint as needed */
+.Skills-circle1{
+  margin-left:0px ;
+}
+.Skills-circle2{
+  margin-right: 0px;
+}
+.Skills-image{
+  width: 340px;
+  height: 500px;
+  position: absolute;
+  left:0px;
+  top: 1000px;
+  z-index: 111;
+  
+}
+}/* Add the following CSS code at the end of your existing styles */
+
+
+
