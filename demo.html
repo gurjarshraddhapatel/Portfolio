@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet"> <!-- Your custom CSS file -->
+  <title>Responsive Design</title>
+  <style>
+    .container {
+        margin-top: 150px; /* Adjust margin-top as needed */
+        background-color: #E6A4B4;
+        padding: 20px; /* Add padding for better visual */
+    }
+  
+    .inner-containers {
+        height: auto; /* Adjust height as needed */
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        margin-bottom: 20px; /* Add margin-bottom for spacing between boxes */
+    }
+    .box1{
+        margin-top:-80px ;
+    }
+    .box2{
+        padding-top:80px ;
+    }
+    .img2{
+        margin-top: 150px;
+        height: 250px;
+        width: 350px;
+    }
+    @media (max-width: 767px) { /* Adjust breakpoint as needed */
+        .box1,
+        .box2,
+        .box3 {
+            margin-top: 20px; /* Adjust margin-top for spacing between boxes on smaller screens */
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row inner-containers">
+        <div class="box1 col-lg-3 col-md-12">
+            <img src="img/about-1.jpg" class="img-fluid" alt="">
+        </div>
+
+        <div class="box2 col-lg-5 col-md-12">
+            <ol class="inner-lines ol">
+                <li>
+                    <h5>Fashion </h5>
+                    <p>Write a short description explaining what this page is about.</p>
+                </li>
+                <li>
+                    <h2>Portrait </h2>
+                    <p>Write a short description explaining what this page is about.</p>
+                </li>
+                <li>
+                    <h2>Lifestyle </h2>
+                    <p>Write a short description explaining what this page is about.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="box3 col-lg-4 col-md-12">
+            <img src="img/about-1.jpg"  class="img-fluid img2" alt="">
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+ <!-- About Start -->
+ <div class="container-fluid position-relative overflow-hidden bg-secondary py-5" style="clip-path: polygon(86% 100%, 100% 100%, 100% 15%, 79% 0, 0 0, 0 100%);">
+    <img src="img/bg-flower.ng" class="img-fluid position-absolute top-0" style="right: -15px; transform: rotate(270deg); opacity: 0.5;" alt="">
+    <img src="img/bg-flower.png" class="img-fluid position-absolute" style="bottom: 10px; left: -15px; transform: rotate(90deg); opacity: 0.5;" alt="">
+    <div class="container py-5 position-relative">
+        <div class="row g-5 align-items-center">
+            <div class="col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="border-white bg-primary" style="border-style: double;">
+                    <img src="img/shraddha.jpg" class="img-fluid w-50" alt="">
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-uppercase text-primary fw-bold mb-4" id="font-family">About me</h5>
+                    <h1 class="display-5 text-white mb-4" id="font-family"> I am Frontend Developer </h1>
+                    <p class="text-white fs-5 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+
+                    <div class="d-flex mt-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0" >
+                            <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-4"id="font-family" style="border: 1px solid #61A3BA;" >Hire me</a>
+                        </div>
+                    </div>
+
+                    <div class="tab-class bg-primary p-4 mt-4">
+                        <ul class="nav d-flex mb-4" id="ul">
+                            <li class="nav-item">
+                                <a class="d-flex py-2 text-center bg-white active" id="border" data-bs-toggle="pill" href="#tab-1">
+                                    <span class="text-dark" style="width: 150px;font-weight: 900;  "id="font-family">Education</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex py-2 mx-3 text-center bg-white"id="border" data-bs-toggle="pill" href="#tab-2">
+                                    <span class="text-dark" style="width: 200px; font-weight: 900;"id="font-family">Inductry Training</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <!-- <div class="me-4">
+                                                <img src="img/bride.jpg" class="img-fluid w-100 img-border" alt="">
+                                            </div> -->
+                                            <div class="text-start my-auto">
+                                                <h5 class="text-dark fw-bold"id="font-family">Education</h5>
+                                                 <ul>
+                                                     <li class="text-dark mb-1"id="font-family">Masters of Computer Application</li>
+                                                     <li class="text-dark mb-1"id="font-family">Bachlor's of Computer Application</li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <!-- <div class="me-4">
+                                                <img src="img/Groom.jpg" class="img-fluid w-100 img-border" alt="">
+                                            </div> -->
+                                            <div class="text-start my-auto">
+                                                <h5 class="text-dark fw-bold"id="font-family">NxtWave CCBP 4.0 Academy</h5>
+                                                
+                                                    <!-- <p class="text-white mb-1">NxtWave CCBP 4.0 Academy</p> -->
+                                                    <p class="text-dark mb-3"id="font-family">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                    <!-- <li class="text-white mb-1">Full</li> -->
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0">
+                            <!-- <a href="#" class="btn btn-primary btn-primary-outline-0 py-2 px-4">Hire me</a> -->
+                            <div class="d-flex">
+                                <a href="" class="btn btn-primary btn-primary-outline-0 btn-sm-square me-2" id="border"><i class="fab fa-facebook-f"></i></a>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 btn-sm-square me-2" id="border"><i class="fab fa-twitter"></i></a>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 btn-sm-square me-2" id="border"><i class="fab fa-instagram"></i></a>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 btn-sm-square me-0" id="border"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <!-- <div class="d-flex align-items-center">
+                            <div class="d-inline-block ms-4 me-3">
+                                <i class="fa fa-phone fa-2x text-success border border-2 border-white p-2"></i>
+                            </div>
+                            <div class="d-flex flex-column flex-nowrap">
+                                <h5 class="text-dark fw-bold mb-2">Call Us Anytime</h5>
+                                <h4 class="text-primary mb-0">+123 456 7890</h4>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About me End -->
+
+<!-- Skills Start -->
+<div class="text-center mb-0 mt-0 wow fadeInUp" data-wow-delay="0.1s" >
+    <h1 class="text-uppercase text-primary fw-bold mb-0 display-6" style="margin-top: -60px;"id="font-family">Skills</h1>
+    <!-- <h1 class="display-4">Responsive and Dynamic Websites</h1> -->
+</div>
+<div class=" py-5 wow zoomIn" data-wow-delay="0.1s">
+    <div class="wedding-date text-center bg-light p-5" id="wedding-date" style="border-style: double !important; border: 15px solid rgba(10, 9, 9, 0.5);">
+        <div class="wedding-date-content">
+            <!-- Experience of Skills -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+    
+                        <!-- <div class="col-lg-10 col-12 text-center mx-auto">
+                            <h2 class="mb-5">IT Skills </h2>
+                        </div> -->
+    
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <!-- Skills Circle 1 -->
+    
+                                <div class="skill1">
+                                    <div class="outer1">
+                                    <div class="inner1">
+                                        <div id="number">
+                                        90%
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <span class="html-circle-skill">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#092635" />
+                                            <stop offset="50%" stop-color="#61A3BA" />
+                                        </linearGradient>
+                                        </defs>
+                                        <circle class="circle1" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <!-- Skills Circle 2  -->
+    
+                                <div class="skill2">
+                                    <div class="outer2">
+                                    <div class="inner2">
+                                        <div id="numbertwo">
+                                        95%
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <span class="html-circle-skill">
+                                    <svg xmlns="CSS" version="1.1" name="CSS" width="160px" height="160px">
+                                        <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="" />
+                                            <stop offset="100%" stop-color="" />
+                                        </linearGradient>
+                                        </defs>
+                                        <circle class="circle2" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                            <div class=" d-flex justify-content-center align-items-center">
+                                 <!-- Skills Circle 3 -->
+    
+    
+                                <div class="skill3">
+                                    <div class="outer3">
+                                      <div class="inner3">
+                                        <div id="numberthree">
+                                           90%
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="html-circle-skill">
+                                      <svg xmlns="CSS" version="1.1" name="CSS" width="160px" height="160px">
+                                        <defs>
+                                          <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e40" />
+                                            <stop offset="100%" stop-color="#673ab1" />
+                                          </linearGradient>
+                                        </defs>
+                                        <circle class="circle3" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                      </svg>
+                                    </span>
+                                  </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class=" d-flex justify-content-center align-items-center">
+                                 <!-- Skills Circle 4  -->
+    
+    
+                                <div class="skill4">
+                                    <div class="outer4">
+                                      <div class="inner4">
+                                        <div id="numberfour">
+                                           90%
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="html-circle-skill">
+                                      <svg xmlns="CSS" version="1.1" name="CSS" width="160px" height="160px">
+                                        <defs>
+                                          <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#e91e40" />
+                                            <stop offset="100%" stop-color="#673ab1" />
+                                          </linearGradient>
+                                        </defs>
+                                        <circle class="circle4" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                      </svg>
+                                    </span>
+                                  </div>
+                                <!-- <a href="donate.html" class="d-block">
+                                    <img src="images/icons/scholarship.png" class="featured-block-image img-fluid" alt="">
+    
+                                    <p class="featured-block-text"><strong>Scholarship</strong> Program</p>
+                                </a> -->
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+    
+    <!-- Skills Section 2 -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mt-5">
+    
+                <!-- <div class="col-lg-10 col-12 text-center mx-auto">
+                    <h2 class="mb-5">Welcome to Kind Heart Charity</h2>
+                </div> -->
+    
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <!-- Skills Circle 5 -->
+    
+                        <div class="skill5">
+                            <div class="outer5">
+                            <div class="inner5">
+                                <div id="numberfive">
+                                70%
+                                </div>
+                            </div>
+                            </div>
+                            <span class="html-circle-skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                                </defs>
+                                <circle class="circle5" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <!-- Skills Circle 6   featured-block  -->
+    
+                        <div class="skill6">
+                            <div class="outer6">
+                            <div class="inner6">
+                                <div id="numbersix">
+                                50%
+                                </div>
+                            </div>
+                            </div>
+                            <span class="html-circle-skill">
+                            <svg xmlns="CSS" version="1.1" name="CSS" width="160px" height="160px">
+                                <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="" />
+                                    <stop offset="100%" stop-color="" />
+                                </linearGradient>
+                                </defs>
+                                <circle class="circle6" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                    <div class=" d-flex justify-content-center align-items-center">
+                         <!-- Skills Circle 7 -->
+    
+    
+                        <div class="skill7">
+                            <div class="outer7">
+                              <div class="inner7">
+                                <div id="numberseven">
+                                   70%
+                                </div>
+                              </div>
+                            </div>
+                            <span class="html-circle-skill">
+                              <svg xmlns="CSS" version="1.1" name="CSS" width="160px" height="160px">
+                                <defs>
+                                  <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e40" />
+                                    <stop offset="100%" stop-color="#673ab1" />
+                                  </linearGradient>
+                                </defs>
+                                <circle class="circle7" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                              </svg>
+                            </span>
+                          </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <div class=" d-flex justify-content-center align-items-center">
+                         <!-- Skills Circle 8  -->
+    
+    
+                        <div class="skill8">
+                            <div class="outer8">
+                              <div class="inner8">
+                                <div id="numbereight">
+                                   90%
+                                </div>
+                              </div>
+                            </div>
+                            <span class="html-circle-skill">
+                              <svg xmlns="CSS" version="1.1" name="CSS" width="160px" height="160px">
+                                <defs>
+                                  <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e40" />
+                                    <stop offset="100%" stop-color="#673ab1" />
+                                  </linearGradient>
+                                </defs>
+                                <circle class="circle8" id="html-circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                              </svg>
+                            </span>
+                          </div>
+                        <!-- <a href="donate.html" class="d-block">
+                            <img src="images/icons/scholarship.png" class="featured-block-image img-fluid" alt="">
+    
+                            <p class="featured-block-text"><strong>Scholarship</strong> Program</p>
+                        </a> -->
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Experience of Skills End -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
