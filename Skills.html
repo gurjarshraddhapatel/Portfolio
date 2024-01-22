@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .Skills-rows{
+            position: relative;
+        }
+        .circle-one , .circle-two, .circle-three, .circle-four{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: black; */
+            border: 5px solid white;
+            padding: 5px;
+        }
+        .col-lg-3 .Skills-circle1{
+            border-radius: 50%;
+            background-color:  #CD8D7A;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-lg-3 .Skills-circle2{
+            border-radius: 50%;
+            background-color:  #CD8D7A;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-lg-3  .Skills-circle{
+            border-radius: 50%;
+            background-color:  wheat;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        } 
+         .Skills-circle-position{  border-radius: 50%;
+            background-color:  wheat;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        } 
+        .col-lg-33{
+            border-radius: 50%;
+            background-color:  wheat;
+            padding: 50px;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-position1{
+            position: absolute;
+            top: 0px;
+            left: 80px;
+            z-index: 111;
+        }
+        .circle-position2{
+            position: absolute;
+            top: 0px;
+            right:230px;
+            z-index: 111;
+        }
+        /* .Skills-circle1{
+            margin-left:-50px ;
+        }
+        .Skills-circle2{
+            margin-right: 0px;
+        } */
+        .Skills-image{
+            width: 590px;
+            height: 500px;
+            position: absolute;
+            left: 260px;
+            top: 300px;
+            z-index: 111;
+            /* background-color: black; */
+        }
+        .Skill-main-container{
+           position: relative;
+           /* background-color: black; */
+        }
+        .Skill-inner-container{
+            position: relative;
+            z-index: 000;
+        }
+       
+        @media (max-width: 767px) { /* Adjust breakpoint as needed */
+        .Skills-circle1{
+            margin-left:0px ;
+        }
+        .Skills-circle2{
+            margin-right: 0px;
+        }
+        .Skills-image{
+            width: 360px;
+            height: 500px;
+            position: absolute;
+            left:0px;
+            top: 1000px;
+            z-index: 111;
+            /* background-color: black; */
+        }
+    }/* Add the following CSS code at the end of your existing styles */
+
+
+
+    </style>
+</head>
+<body>
+  
+    <div class="container Skill-main-container  ">
+        <div class="container Skill-inner-container">
+            <!-- <h1 class="text-center">My Skills</h1> -->
+            <div class="row Skills-rows">
+                <div class="col-lg-3 circle-one"></div>
+                <div class="col-lg-3 circle-two">
+                    <div class="Skills-circle1">
+                        <div>
+                            <h2 class="px-2">Library</h2>
+                            <ul style="list-style-type: square; ">
+                                
+                                <li>Reactjs</li>
+                                <li>Redux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 circle-three">
+                    <div class="Skills-circle1">
+                        <div>
+                            <h3 class="px-2">Backend</h3>
+                            <ul class="" style="list-style-type: square; ">
+                                <li>Nodejs</li>
+                                <li>Expressjs</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-lg-3 circle-four"></div>
+            </div>
+        </div>
+    
+    
+        <!-- second -->
+        <div class="container Skill-inner-container ">
+            
+            <div class="row ">
+                <div class="col-lg-3 circle-one">
+                    <div class="Skills-circle" style="margin-top:-15px;">
+                        <div>
+                            <h3 class="px-4">Tool</h3>
+                            <ul style="list-style-type: square; text-align: left;">
+                                
+                                <li>MongoDB</li>
+                                <li>SQLite</li>
+                                <li>MySql</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 circle-four"></div>
+                <div class="col-lg-3 circle-four"></div>
+                <div class="col-lg-3 circle-four">
+                    <div class="Skills-circle"style="margin-top:-35px;">
+                        <div>
+                            <h3 class="px-4">Tool</h3>
+                            <ul style="list-style-type: square; text-align: left;">
+                                
+                                <li>MongoDB</li>
+                                <li>SQLite</li>
+                                <li>MySql</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>     
+                
+            </div>
+        </div>
+        <div class="Skills-image "> 
+            <img src="img/Certificats/Screenshot 2024-01-19 211424.png" class="img-fluid " alt="">
+        </div>
+    </div>
+<!-- </div> -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
